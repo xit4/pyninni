@@ -1,0 +1,4 @@
+{
+  "python.envFile": "${workspaceFolder}/venv/bin/python3",
+  "python.linting.pylintPath": "${workspaceFolder}/venv/bin/pylint"
+}
