@@ -45,6 +45,12 @@ class UserModel(db.Model):
     def find_by_id(cls, _id):
         return cls.query.filter_by(id=_id).first()
 
+    def patch(self, username, email, first_name, last_name):
+        self.username = username if username else self.username
+        self.email = email if email else self.email
+        self.first_name = first_name if first_name else self.first_name
+        self.last_name = last_name if last_name else self.last_name
+
     def save_to_db(self):
         db.session.add(self)
         db.session.commit()

@@ -7,6 +7,7 @@ error_user_generic = "An error occurred trying to create a new user"
 error_user_not_found = "User not found"
 error_not_admin = "You need to be an administrator"
 error_patch_other = "You can't patch other users' information"
+error_invalid_credentials = "Invalid credentials"
 
 
 success_user_created = "User created successfully"
