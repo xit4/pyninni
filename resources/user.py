@@ -39,10 +39,10 @@ class UserRegister(Resource):
         data = UserRegister.parser.parse_args()
 
         if UserModel.find_by_username(data['username']):
-            return {"message": strings.error_username_not_unique}, 400
+            return {'message': strings.error_username_not_unique}, 400
 
         if UserModel.find_by_email(data['email']):
-            return {"message": strings.error_email_not_unique}, 400
+            return {'message': strings.error_email_not_unique}, 400
 
         now = datetime.datetime.now()
         user = UserModel(**data, creation_date=now)
@@ -52,7 +52,7 @@ class UserRegister(Resource):
             print(e)
             return {'message': strings.error_user_generic}, 500
 
-        return {"message": strings.success_user_created}, 201
+        return {'message': strings.success_user_created}, 201
 
 
 class User(Resource):
@@ -68,7 +68,7 @@ class User(Resource):
         user = UserModel.find_by_id(user_id)
         if not user:
             return {'message': strings.error_user_not_found}, 404
-        return user.json()
+        return user.json(), 200
 
     @staticmethod
     @jwt_required
@@ -95,11 +95,13 @@ class User(Resource):
 
         data = User.parser.parse_args()
         if UserModel.find_by_username(data['username']):
-            return {"message": strings.error_username_not_unique}, 400
+            return {'message': strings.error_username_not_unique}, 400
         if UserModel.find_by_email(data['email']):
-            return {"message": strings.error_email_not_unique}, 400
-        print(data)
-        return {'message': "wow"}, 200
+            return {'message': strings.error_email_not_unique}, 400
+
+        user.patch(**data)
+        user.save_to_db()
+        return user.json(), 200
 
 
 class UserLogin(Resource):
@@ -107,12 +109,12 @@ class UserLogin(Resource):
     parser.add_argument('username',
                         type=str,
                         required=True,
-                        help="The username cannot be left blank!"
+                        help=strings.error_user_required
                         )
     parser.add_argument('password',
                         type=str,
                         required=True,
-                        help="The password cannot be left blank!"
+                        help=strings.error_password_required
                         )
 
     @classmethod
@@ -130,7 +132,7 @@ class UserLogin(Resource):
             }, 200
 
         return {
-            "message": "Invalid credentials"
+            'message': strings.error_invalid_credentials
         }, 401
 
 
