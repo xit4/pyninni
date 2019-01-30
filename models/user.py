@@ -6,7 +6,7 @@ class UserModel(db.Model):
     __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True)
-    password = db.Column(db.String(80))
+    password = db.Column(db.String(100))
     email = db.Column(db.String(80), unique=True)
     first_name = db.Column(db.String(80))
     last_name = db.Column(db.String(80))
