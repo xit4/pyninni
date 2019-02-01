@@ -51,6 +51,9 @@ class UserModel(db.Model):
         self.first_name = first_name if first_name else self.first_name
         self.last_name = last_name if last_name else self.last_name
 
+    def update_last_login(self, last_login):
+        self.last_login = last_login if last_login else self.last_login
+
     def save_to_db(self):
         db.session.add(self)
         db.session.commit()
