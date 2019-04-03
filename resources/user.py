@@ -1,4 +1,3 @@
-import sqlite3
 import datetime
 from flask_restful import Resource, reqparse
 from models.user import UserModel
