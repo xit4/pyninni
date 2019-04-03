@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
 from resources.user import UserRegister, User, UserLogin, TokenRefresh
+from models.nutrient import NutrientModel
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///data.db'
@@ -12,9 +13,17 @@ app.secret_key = "super.secret.key"
 api = Api(app)
 
 
+def init_db():
+    print("Initializing Nutrients")
+    NutrientModel.initialize_nutrients()
+
+
 @app.before_first_request
 def create_tables():
+    print("Creating DB")
     db.create_all()
+    print("Initializing DB")
+    init_db()
 
 
 jwt = JWTManager(app)
