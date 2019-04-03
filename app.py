@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
 from resources.user import UserRegister, User, UserLogin, TokenRefresh
+from resources.nutrient import Nutrient, Nutrients
 from models.nutrient import NutrientModel
 
 app = Flask(__name__)
@@ -14,8 +15,11 @@ api = Api(app)
 
 
 def init_db():
-    print("Initializing Nutrients")
-    NutrientModel.initialize_nutrients()
+    print("Checking if Nutrients is initialized")
+    nutrients = NutrientModel.query.all()
+    if not nutrients:
+        print("Initializing Nutrients")
+        NutrientModel.initialize_nutrients()
 
 
 @app.before_first_request
@@ -40,6 +44,8 @@ api.add_resource(UserRegister, '/register')
 api.add_resource(User, '/user/<int:user_id>')
 api.add_resource(UserLogin, '/login')
 api.add_resource(TokenRefresh, '/refresh')
+api.add_resource(Nutrient, '/nutrient/<int:nutrient_id>')
+api.add_resource(Nutrients, '/nutrients')
 
 
 if __name__ == '__main__':

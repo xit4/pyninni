@@ -1,3 +1,4 @@
+# User related strings
 error_user_required = "The username cannot be left blank!"
 error_password_required = "The password cannot be left blank!"
 error_email_required = "The email cannot be left blank!"
@@ -12,3 +13,7 @@ error_invalid_credentials = "Invalid credentials"
 
 success_user_created = "User created successfully"
 success_user_deleted = "User successfully deleted"
+
+# Nutrient related strings
+error_nutrient_not_found = "Nutrient not found"
+error_nutrients_not_found = "Nutrients not found"
