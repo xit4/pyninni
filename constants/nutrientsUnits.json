@@ -1,0 +1,432 @@
+{
+  "0": {
+    "id": 0,
+    "label": "P. Edibile",
+    "unit": "g"
+  },
+  "1": {
+    "id": 1,
+    "label": "Energia",
+    "unit": "kcal"
+  },
+  "2": {
+    "id": 2,
+    "label": "Proteine",
+    "unit": "g"
+  },
+  "3": {
+    "id": 3,
+    "label": "Proteine animali",
+    "unit": "g"
+  },
+  "4": {
+    "id": 4,
+    "label": "Proteine vegetali",
+    "unit": "g"
+  },
+  "5": {
+    "id": 5,
+    "label": "Lipidi",
+    "unit": "g"
+  },
+  "6": {
+    "id": 6,
+    "label": "Lipidi animali",
+    "unit": "g"
+  },
+  "7": {
+    "id": 7,
+    "label": "Lipidi vegetali",
+    "unit": "g"
+  },
+  "8": {
+    "id": 8,
+    "label": "Colesterolo",
+    "unit": "mg"
+  },
+  "9": {
+    "id": 9,
+    "label": "Glucidi",
+    "unit": "g"
+  },
+  "10": {
+    "id": 10,
+    "label": "Amido",
+    "unit": "g"
+  },
+  "11": {
+    "id": 11,
+    "label": "Glucidi solubili",
+    "unit": "g"
+  },
+  "12": {
+    "id": 12,
+    "label": "Fibra",
+    "unit": "g"
+  },
+  "13": {
+    "id": 13,
+    "label": "Alcol",
+    "unit": "g"
+  },
+  "14": {
+    "id": 14,
+    "label": "Acqua",
+    "unit": "g"
+  },
+  "15": {
+    "id": 15,
+    "label": "Ferro",
+    "unit": "mg"
+  },
+  "16": {
+    "id": 16,
+    "label": "Calcio",
+    "unit": "mg"
+  },
+  "17": {
+    "id": 17,
+    "label": "Sodio",
+    "unit": "mg"
+  },
+  "18": {
+    "id": 18,
+    "label": "Potassio",
+    "unit": "mg"
+  },
+  "19": {
+    "id": 19,
+    "label": "Fosforo",
+    "unit": "mg"
+  },
+  "20": {
+    "id": 20,
+    "label": "Zinco",
+    "unit": "mg"
+  },
+  "21": {
+    "id": 21,
+    "label": "Magnesio",
+    "unit": "mg"
+  },
+  "22": {
+    "id": 22,
+    "label": "Rame",
+    "unit": "mg"
+  },
+  "23": {
+    "id": 23,
+    "label": "Selenio",
+    "unit": "µg"
+  },
+  "24": {
+    "id": 24,
+    "label": "Cloro",
+    "unit": "mg"
+  },
+  "25": {
+    "id": 25,
+    "label": "Iodio",
+    "unit": "µg"
+  },
+  "26": {
+    "id": 26,
+    "label": "Manganese",
+    "unit": "mg"
+  },
+  "27": {
+    "id": 27,
+    "label": "Zolfo",
+    "unit": "mg"
+  },
+  "28": {
+    "id": 28,
+    "label": "Vit. B1",
+    "unit": "mg"
+  },
+  "29": {
+    "id": 29,
+    "label": "Vit. B2",
+    "unit": "mg"
+  },
+  "30": {
+    "id": 30,
+    "label": "Vit. C",
+    "unit": "mg"
+  },
+  "31": {
+    "id": 31,
+    "label": "Niacina",
+    "unit": "mg"
+  },
+  "32": {
+    "id": 32,
+    "label": "Vit. B6",
+    "unit": "mg"
+  },
+  "33": {
+    "id": 33,
+    "label": "Folati",
+    "unit": "µg"
+  },
+  "34": {
+    "id": 34,
+    "label": "Acido pantotenico",
+    "unit": "mg"
+  },
+  "35": {
+    "id": 35,
+    "label": "Biotina",
+    "unit": "µg"
+  },
+  "36": {
+    "id": 36,
+    "label": "Vit. B12",
+    "unit": "µg"
+  },
+  "37": {
+    "id": 37,
+    "label": "Retinolo",
+    "unit": "µg"
+  },
+  "38": {
+    "id": 38,
+    "label": "ß-carotene eq.",
+    "unit": "µg"
+  },
+  "39": {
+    "id": 39,
+    "label": "Vit. E",
+    "unit": "mg"
+  },
+  "40": {
+    "id": 40,
+    "label": "Vit. D",
+    "unit": "µg"
+  },
+  "41": {
+    "id": 41,
+    "label": "Acidi grassi saturi totali",
+    "unit": "g"
+  },
+  "42": {
+    "id": 42,
+    "label": "Somma degli acidi butirrico, caproico, caprilico e caprico",
+    "unit": "g"
+  },
+  "43": {
+    "id": 43,
+    "label": "Acido laurico",
+    "unit": "g"
+  },
+  "44": {
+    "id": 44,
+    "label": "Acido miristico",
+    "unit": "g"
+  },
+  "45": {
+    "id": 45,
+    "label": "Acido palmitico",
+    "unit": "g"
+  },
+  "46": {
+    "id": 46,
+    "label": "Acido stearico",
+    "unit": "g"
+  },
+  "47": {
+    "id": 47,
+    "label": "Acido arachidico",
+    "unit": "g"
+  },
+  "48": {
+    "id": 48,
+    "label": "Acido beenico",
+    "unit": "g"
+  },
+  "49": {
+    "id": 49,
+    "label": "Acidi grassi monoinsaturi totali",
+    "unit": "g"
+  },
+  "50": {
+    "id": 50,
+    "label": "Acido miristoleico",
+    "unit": "g"
+  },
+  "51": {
+    "id": 51,
+    "label": "Acido palmitoleico",
+    "unit": "g"
+  },
+  "52": {
+    "id": 52,
+    "label": "Acido oleico",
+    "unit": "g"
+  },
+  "53": {
+    "id": 53,
+    "label": "Acidi eicosenoico",
+    "unit": "g"
+  },
+  "54": {
+    "id": 54,
+    "label": "Acido erucico",
+    "unit": "g"
+  },
+  "55": {
+    "id": 55,
+    "label": "Acidi grassi polinsaturi totali",
+    "unit": "g"
+  },
+  "56": {
+    "id": 56,
+    "label": "Acido linoleico",
+    "unit": "g"
+  },
+  "57": {
+    "id": 57,
+    "label": "Acido linolenico",
+    "unit": "g"
+  },
+  "58": {
+    "id": 58,
+    "label": "Acido arachidonico",
+    "unit": "g"
+  },
+  "59": {
+    "id": 59,
+    "label": "Acido eicosapentaenoico (EPA)",
+    "unit": "g"
+  },
+  "60": {
+    "id": 60,
+    "label": "Acido decosaesaenoico (DHA)",
+    "unit": "g"
+  },
+  "61": {
+    "id": 61,
+    "label": "Altri acidi grassi polinsaturi",
+    "unit": "g"
+  },
+  "62": {
+    "id": 62,
+    "label": "Triptofano",
+    "unit": "mg"
+  },
+  "63": {
+    "id": 63,
+    "label": "Treonina",
+    "unit": "mg"
+  },
+  "64": {
+    "id": 64,
+    "label": "Isoleucina",
+    "unit": "mg"
+  },
+  "65": {
+    "id": 65,
+    "label": "Leucina",
+    "unit": "mg"
+  },
+  "66": {
+    "id": 66,
+    "label": "Lisina",
+    "unit": "mg"
+  },
+  "67": {
+    "id": 67,
+    "label": "Metionina",
+    "unit": "mg"
+  },
+  "68": {
+    "id": 68,
+    "label": "Cistina",
+    "unit": "mg"
+  },
+  "69": {
+    "id": 69,
+    "label": "Fenilalanina",
+    "unit": "mg"
+  },
+  "70": {
+    "id": 70,
+    "label": "Tirosina",
+    "unit": "mg"
+  },
+  "71": {
+    "id": 71,
+    "label": "Valina",
+    "unit": "mg"
+  },
+  "72": {
+    "id": 72,
+    "label": "Arginina",
+    "unit": "mg"
+  },
+  "73": {
+    "id": 73,
+    "label": "Istidina",
+    "unit": "mg"
+  },
+  "74": {
+    "id": 74,
+    "label": "Alanina",
+    "unit": "mg"
+  },
+  "75": {
+    "id": 75,
+    "label": "Acido aspartico",
+    "unit": "mg"
+  },
+  "76": {
+    "id": 76,
+    "label": "Acido glutammico",
+    "unit": "mg"
+  },
+  "77": {
+    "id": 77,
+    "label": "Glicina",
+    "unit": "mg"
+  },
+  "78": {
+    "id": 78,
+    "label": "Prolina",
+    "unit": "mg"
+  },
+  "79": {
+    "id": 79,
+    "label": "Serina",
+    "unit": "mg"
+  },
+  "80": {
+    "id": 80,
+    "label": "Glucosio",
+    "unit": "g"
+  },
+  "81": {
+    "id": 81,
+    "label": "Fruttosio",
+    "unit": "g"
+  },
+  "82": {
+    "id": 82,
+    "label": "Galattosio",
+    "unit": "g"
+  },
+  "83": {
+    "id": 83,
+    "label": "Saccarosio",
+    "unit": "g"
+  },
+  "84": {
+    "id": 84,
+    "label": "Maltosio",
+    "unit": "g"
+  },
+  "85": {
+    "id": 85,
+    "label": "Lattosio",
+    "unit": "g"
+  }
+}
