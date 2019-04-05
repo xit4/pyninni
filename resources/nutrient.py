@@ -21,7 +21,6 @@ class Nutrients(Resource):
     @jwt_required
     def get():
         nutrients = NutrientModel.get_all()
-        print(nutrients)
         if not nutrients:
             return {'message': strings.error_nutrients_not_found}, 404
         return {'items': [nutrient.json() for nutrient in NutrientModel.query.all()]}, 200

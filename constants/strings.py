@@ -17,3 +17,7 @@ success_user_deleted = "User successfully deleted"
 # Nutrient related strings
 error_nutrient_not_found = "Nutrient not found"
 error_nutrients_not_found = "Nutrients not found"
+
+# Food related strings
+error_food_not_found = "Food not found"
+error_foods_not_found = "Foods not found"
