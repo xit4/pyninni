@@ -45,8 +45,4 @@ class FoodModel(db.Model):
             foods = jsonTools.load(f)
             for i in range(len(foods)):
                 food = foods[str(i)]
-                print("Adding food {} with nutrients {}".format(
-                    food['name'], food['nutrients']))
-                db.session.add(FoodModel(
-                    food['name'], food['nutrients']))
         db.session.commit()
