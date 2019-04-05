@@ -1,5 +1,5 @@
 from app import app
-from db import db, init_db
+from db import db
 from models.nutrient import NutrientModel
 from models.food import FoodModel
 
