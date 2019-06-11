@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
+from flask_cors import CORS
 from resources.user import UserRegister, User, UserLogin, TokenRefresh
 from resources.nutrient import Nutrient, Nutrients
 from resources.food import Food, Foods
@@ -8,6 +9,7 @@ from models.nutrient import NutrientModel
 from models.food import FoodModel
 
 app = Flask(__name__)
+cors = CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///data.db'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
